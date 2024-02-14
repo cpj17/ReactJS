@@ -1,0 +1,65 @@
+/* VerticalTabs.css */
+
+.vertical-tabs-container {
+    display: flex;
+    /* max-width: 600px; */
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .vertical-tabs {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    border-right: 1px solid #ccc;
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+  }
+  
+  .tab {
+    display: flex; /* Align stars to the left */
+    align-items: center; /* Center vertically within the tab */
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tab:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .tab.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .tab-content {
+    /* flex: 1; */
+    width: 100%;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    background: linear-gradient(to right, #fff, #f9f9f9);
+    overflow: auto;
+    /* z-index: -1; */
+  }
+  
+  /* .vertical-tabs-container {
+    position: relative;
+  } */
+  
+  .legend {
+    font-size: 1.2em;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 150px;
+  }
