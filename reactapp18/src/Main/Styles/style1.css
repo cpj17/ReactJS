@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    /* background-color: #333; */
+    background-color: #bfecf6;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+#logo img {
+    height: 64px;
+    width: 64px;
+    margin-right: 10px;
+    /* border-radius: 50%; */
+    transition: transform 0.3s ease;
+    padding: auto;
+}
+
+#logo img:hover {
+    transform: rotate(360deg);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 8px 15px;
+    /* Add padding to style as a button */
+    border: 2px solid black;
+    /* Add border to style as a button */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners */
+}
+
+nav a:hover {
+    color: #ffcc00;
+    background-color: #333;
+    /* Change background on hover */
+}
+
+section {
+    margin-top: 80px;
+    /* Adjusted margin to accommodate the fixed header */
+    background-color: #fff;
+    padding: 10px;
+    margin: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submenu {
+    text-align: right;
+    margin-top: 90px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.submenu button {
+    color: black;
+    text-decoration: none;
+    /* margin: 0 15px; */
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 8px 15px;
+    background-color: rgba(226, 244, 246, 0.84);
+    /* background-color: rgba(12, 123, 136, 0.84); */
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.submenu button:hover {
+    color: #ffcc00;
+    background-color: rgba(107, 205, 216, 0.84);
+    cursor: pointer;
+}
+
+/* TextInput.css */
+
+.text-input {
+    margin-bottom: 20px;
+}
+
+.clsLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.clsInput {
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Hover and Focus Styles */
+.clsInput:hover,
+.clsInput:focus {
+    border-color: #007bff;
+}
+
+/* Animation for Focus */
+.clsInput:focus {
+    transition: border-color 0.3s ease-in-out;
+}
+
+.divTab1Container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+.divTab1 {
+    max-height: 500px;
+    overflow: auto;
+    /* border: 2px solid black; */
+    padding: 8px;
+}
